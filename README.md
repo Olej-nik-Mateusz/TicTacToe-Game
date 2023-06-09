@@ -1,5 +1,5 @@
 # TIC TAC TOE GAME 
-# ON YOUR TERMINAL 
+### ON YOUR TERMINAL 
 
 ## 1. Run a game -  run a code in your terminal.   
 
@@ -7,8 +7,8 @@
 
 ## 3. After pressing S - The board will appear.
 
-#    First move is Yours. You play as "X"s' PC will be "O"s'.
-#    Press number between 0 and 8 to put Your move on the board.
+###    First move is Yours. You play as "X"s' PC will be "O"s'.
+###    Press number between 0 and 8 to put Your move on the board.
 
 ## 4. Board move positions :
 
