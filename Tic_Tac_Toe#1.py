@@ -1,14 +1,14 @@
 
 
-def insertLetter(letter, pos):
+def insertLetter(letter, pos):      #defines where to put "x" on board
     board[pos] = letter
 
 
-def spaceIsFree(pos):
+def spaceIsFree(pos):       #defines board positions when it's free
     return board[pos] ==' '
 
 
-def printBoard(board):
+def printBoard(board):      #is printing game board 
     print(" --- --- --- ")
     print("| "+board[0]+" | "+board[1]+" | "+board[2]+" |   ")
     print(" --- --- --- ")
@@ -18,24 +18,23 @@ def printBoard(board):
     print(" --- --- --- ")
 
 
-def isWinner(bo, le):
+def isWinner(bo, le):       #win conditions
 
-# Win conditions:
     return bo[0:3]==[le,le,le] or bo[3:6]==[le,le,le] or bo[6:9]==[le,le,le] or (bo[0],bo[3],bo[6])==(le,le,le) or (bo[1],bo[4],bo[7])==(le,le,le) or (bo[2],bo[5],bo[8])==(le,le,le)  or (bo[0],bo[4],bo[8])==(le,le,le) or (bo[2],bo[4],bo[6])==(le,le,le)
 
 
-def isBoardFull(board):
+def isBoardFull(board):     #function to check if board is full    
     if board.count(" ")>1:
         return False
     else:
         return True
 
 
-def playerMove():
+def playerMove():       #set players' move
     run=True
     
     while run:
-        move = input("Where You want to put \'X\' \n  (0-8): >>>  " )
+        move = input("Where You want to put \'X\' \n  (0-8): >>>  " )       #to chose player move (int 1-8)
         
         try:
             move = int(move)
@@ -57,7 +56,7 @@ def playerMove():
             print("not a number")
             
 
-def pcMove():
+def pcMove():       #define computer "pick move" priorities 
 
     possibleMoves = [ind for ind, letter in enumerate(board) if letter==" " and ind in range(0,9)]    
     move=10
@@ -158,7 +157,7 @@ while True:
         quit()
 
     else:
-        print("dupa")
+        print("Wrong command")
 
 
 
